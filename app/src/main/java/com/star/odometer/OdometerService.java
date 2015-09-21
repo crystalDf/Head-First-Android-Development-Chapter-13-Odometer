@@ -53,7 +53,7 @@ public class OdometerService extends Service {
         mLocationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
         mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
-                1000, 0, mLocationListener);
+                1000, 10, mLocationListener);
     }
 
     @Override
